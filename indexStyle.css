@@ -1,0 +1,10 @@
+body {
+    margin-top: 71px;
+    background-color: deepskyblue;
+}
+nav {
+    height: 55px;
+}
+.navbarButtons {
+    background-color: transparent;
+}
