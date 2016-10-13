@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="indexStyle.css" type="text/css">
+        <link rel="stylesheet" href="contactStyle.css" type="text/css">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header center-block">
+                    <button type="button" class="navbar navbarButtons"><a href="#index.html">Home</a></button>
+                    <button type="button" class="navbar navbarButtons"><a href="#">Events</a></button>
+                    <button type="button" class="navbar navbarButtons"><a href="#">Info</a></button>
+                    <button type="button" class="navbar navbarButtons"><a href="#">Contact Us</a></button>
+                </div>
+            </div>
+        </nav>
+    </head>
+    <body>
+        <h3>Contact us about anything related to the AutoXSource website and/or services. <br> We'll do our best to get back to you as soon as possible.</h3>
+        <form id="contactForm">
+            <div class="infoboxes">
+                <label for="txtname"><p>Name:</p></label>
+                <input type=text width="10px" height="20px" id="txtNmail">
+                <br>
+                <label for="txtEmail"><p>Email:</p></label>
+                <input type=email width="10px" id="txtEmail">
+                <br>
+                <label for="txtComment"><p>Comment:</p></label>
+                <textarea id="txtComment" rows="15" cols="75"></textarea>
+                <br>
+            </div>
+            <div class="submitbutton">
+                <input class="btn" type=submit value="Submit" onClick="contact();">
+            </div>
+        </form>
+</body>
+</html>
