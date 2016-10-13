@@ -3,8 +3,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script  src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="indexJS.js"></script>
   <link rel="stylesheet" href="indexStyle.css">
 </head>
 <body>
@@ -14,72 +15,18 @@
         <button type="button" class="navbar navbarButtons"><a href="#index.html">Home</a></button>
         <button type="button" class="navbar navbarButtons"><a href="#">Events</a></button>
         <button type="button" class="navbar navbarButtons"><a href="#">Info</a></button>
-        <button type="button" class="navbar navbarButtons"><a href="#">Contact Us</a></button>
+        <button type="button" class="navbar navbarButtons"><a href="#contact.html">Contact Us</a></button>
       </div>
     </div>
   </nav>
   <div class = "container-fluid">
-  <div class="dropdown">
-    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Rulebook
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">SCCR - Sports Car Club of Rockford</a></li>
-      <li><a href="#">Rulebook #2</a></li>
-      <li><a href="#">Rulebook #3</a></li>
-    </ul>
-  </div>
-  </div>
+    <select class="form-control makes"></select>
   <br>
-  <div class="dropdown">
-    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Vehicle
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">BMW - e36</a></li>
-      <li><a href="#">BMW - e46</a></li>
-      <li><a href="#">Chevrolet - Corvette</a></li>
-      <li><a href="#">Mazda - Miata</a></li>
-      <li><a href="#">Honda - S2000</a></li>
-      <li><a href="#">Mazda - Miata</a></li>
-      <li><a href="#">Mitsubishi - Evo 8</a></li>
-      <li><a href="#">Mitsubishi - Evo 9</a></li>
-      <li><a href="#">Mitsubishi - Evo 10</a></li>
-      <li><a href="#">Nissan - 350Z</a></li>
-      <li><a href="#">Nissan - 370Z</a></li>
-    </ul>
-  </div>
-  <div class="dropdown">
-    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"> Trim
-      <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">BMW - e36</a></li>
-      <li><a href="#">BMW - e46</a></li>
-      <li><a href="#">Chevrolet - Corvette</a></li>
-      <li><a href="#">Mazda - Miata</a></li>
-      <li><a href="#">Honda - S2000</a></li>
-      <li><a href="#">Mazda - Miata</a></li>
-      <li><a href="#">Mitsubishi - Evo 8</a></li>
-      <li><a href="#">Mitsubishi - Evo 9</a></li>
-      <li><a href="#">Mitsubishi - Evo 10</a></li>
-      <li><a href="#">Nissan - 350Z</a></li>
-      <li><a href="#">Nissan - 370Z</a></li>
-    </ul>
-  </div>
-  <div class="dropdown">
-    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Vehicle
-      <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">BMW - e36</a></li>
-      <li><a href="#">BMW - e46</a></li>
-      <li><a href="#">Chevrolet - Corvette</a></li>
-      <li><a href="#">Mazda - Miata</a></li>
-      <li><a href="#">Honda - S2000</a></li>
-      <li><a href="#">Mazda - Miata</a></li>
-      <li><a href="#">Mitsubishi - Evo 8</a></li>
-      <li><a href="#">Mitsubishi - Evo 9</a></li>
-      <li><a href="#">Mitsubishi - Evo 10</a></li>
-      <li><a href="#">Nissan - 350Z</a></li>
-      <li><a href="#">Nissan - 370Z</a></li>
-    </ul>
-  </div>
+    <select class="form-control models"></select>
+    <select class="form-control">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
 </body>
 </html>
