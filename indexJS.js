@@ -1,26 +1,44 @@
-$.getJSON( "makes.json", function( data ) {
-    var items = [];
+$(document).ready(function() {
 
-    // grab the correct part of the JSON
-    var makes = data["makes"];
+    $.getJSON( "makes.json", function( data ) {
+        var items = [];
 
+        // grab the correct part of the JSON
+        var makes = data["makes"];
 
-    // Now we can go through each of the makes and grab the data we need (id and name)
-    // and insert them into our items array
-    $.each( makes, function( key, val ) {
-        items.push( "<option id='" + val["id"] + "'>" + val["name"] + "</option>" );
+        // Now we can go through each of the makes and grab the data we need (id and name)
+        // and insert them into our items array
+        $.each( makes, function( key, val ) {
+            items.push( "<option id='" + val["id"] + "'>" + val["name"] + "</option>" );
+        });
+
+        // Finally we can insert them into our <select> that has the
+        // id="makes"
+        $(".makes").append(items.join("" ));
     });
 
-    // Finally we can insert them into our <select> that has the
-    // id="makes"
-    $("#makes").append(items.join("" ));
+    $( ".makes" ).change(function() {
 
-    //Now we make a drop down of the make's models.
-    var models = data["name"];
-    $.each( models, function( key, val ) {
-        items.push( "<option id='" + val["name"] + "'>" + val["model"] + "</option>" );
-    });
-    $("#models").append(items.join("" ));
+        $.getJSON( "makes.json", function( data ) {
+            var items = [];
+            var selectedId = $('.makes').find(':selected').attr('id');
+            var makes = data["makes"];
+           for (var i = 0; i < makes.length; ++i) {
+
+               if (makes[i]['id'] == selectedId) {
+
+                   $.each( makes[i]['models'], function( key, val ) {
+                       items.push( "<option id='" + val["id"] + "'>" + val["name"] + "</option>" );
+                   });
+
+                   break;
+               }
+           }
+            $(".models").empty();
+            $(".models").append(items.join("" ));
+        });
+
+
     });
 
 });
