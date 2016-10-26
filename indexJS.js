@@ -23,22 +23,38 @@ $(document).ready(function() {
             var items = [];
             var selectedId = $('.makes').find(':selected').attr('id');
             var makes = data["makes"];
-           for (var i = 0; i < makes.length; ++i) {
+            for (var i = 0; i < makes.length; ++i) {
 
                if (makes[i]['id'] == selectedId) {
 
                    $.each( makes[i]['models'], function( key, val ) {
                        items.push( "<option id='" + val["id"] + "'>" + val["name"] + "</option>" );
                    });
-
                    break;
                }
-           }
+            }
             $(".models").empty();
             $(".models").append(items.join("" ));
         });
-
-
     });
+    $( ".makes" ).change(function() {
 
+        $.getJSON( "makes.json", function( data ) {
+            var items = [];
+            //var selectedId = $('.makes').find(':selected').attr('id');
+            var selectedModel = $('makes').find(':selected').attr('years');
+            var makes = data["makes"];
+            for (var i = 0; i < makes.length; ++i) {
+                if (makes[i]['models'] == selectedModel) {
+
+                    $.each( makes[i]['models']['years'], function( key, val ) {
+                        items.push( "<option id='" + val["id"] + "'>" + val["name"] + "</option>" );
+                    });
+                    break;
+                }
+            }
+            $(".years").empty();
+            $(".years").append(items.join("" ));
+        });
+    });
 });
