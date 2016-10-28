@@ -2,9 +2,30 @@ body {
     margin-top: 71px;
     background-color: deepskyblue;
 }
+h1 {
+    text-align: center;
+    font-family: "Cambria","Arial","SansSerif";
+    font-size: 36pt;
+}
 nav {
-    height: 55px;
+    height: 50px;
 }
 .navbarButtons {
     background-color: transparent;
+}
+.form-control {
+    width: 225px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+    font-family: "Cambria","Arial","SansSerif";
+}
+.btn {
+    background-color: black;
+    font-size: 32pt;
+    padding-left: 2%;
+    padding-right: 2%;
 }
