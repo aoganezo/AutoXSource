@@ -1,6 +1,6 @@
 body {
     margin-top: 71px;
-    background-color: deepskyblue;
+    background-color: orange;
 }
 h1 {
     text-align: center;
@@ -9,6 +9,14 @@ h1 {
 }
 nav {
     height: 50px;
+    color: white;
+    text-decoration: none;
+}
+.navbar {
+}
+.navbar > a {
+    color: white;
+    text-decoration: none;
 }
 .navbarButtons {
     background-color: transparent;
@@ -18,14 +26,23 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
-
+label {
+    text-align: center;
+    display: block;
+}
 .center {
     text-align: center;
     font-family: "Cambria","Arial","SansSerif";
 }
 .btn {
     background-color: black;
-    font-size: 32pt;
+    /*border-width: 0px;*/
+    border-color: grey;
+    color:white;
+    font-size: 20pt;
     padding-left: 2%;
     padding-right: 2%;
+}
+.btn-default {
+
 }

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="indexStyle.css">
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header center-block">
         <button type="button" class="navbar navbarButtons"><a href="#index.html">Home</a></button>
@@ -22,15 +22,24 @@
   <h1>AutoX</h1>
   <br>
   <div class = "container-fluid">
-    <select class="form-control makes"></select>
+    <label for="makes">Makes</label>
+    <select class="form-control makes" id="makes">
+      <option>--Select Your Car's Make--</option>
+    </select>
     <br><br><br>
-    <select class="form-control models"></select>
+    <label for="models">Models</label>
+    <select class="form-control models" id="models">
+      <option>--Select Your Car's Model--</option>
+    </select>
     <br><br><br>
-    <select class="form-control years"></select>
+    <label for="years">Years</label>
+    <select class="form-control years" id="years">
+      <option>--Select Your Car's Year--</option>
+    </select>
   </div>
  <br><br>
   <div class ="center">
-    <button class="btn btn-primary">RACE</button>
+    <button class="btn btn-default btn-xs">RACE</button>
   </div>
 </body>
 </html>
