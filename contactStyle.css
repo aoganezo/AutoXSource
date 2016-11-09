@@ -1,35 +1,71 @@
-body {
-    margin-top: 10%;
-    margin-left: 2%; 
-}
-
 form {
-    margin-top: 8%;
+    margin-top: 3%;
 }
 
-label {
-    float: none;
-    font-size: 80%;
-    width: 175px;
-    font-weight: bold;
-    padding: 3px;
+label{
+	margin-left: 8%;
 }
-
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+	color: yellow;
+	text-decoration: underline;
+}
 input {
     width: 250px;
     padding: 3px;
-    margin-top: -10px;
+    margin-left: 8%;
 }
 
 textarea {
-    resize:both;
+    width: 500px;
+	height: 200px;
+    padding: 3px;
+    margin-left: 8%;
 }
 
 h3 {
     text-align: center;
 }
-
-.submitbutton {
-    margin-left: 21%;
+body {
+    margin-top: 71px;
+    background-color: orange;
+}
+h1 {
+    text-align: center;
+    font-family: "Cambria","Arial","SansSerif";
+    font-size: 36pt;
+}
+nav {
+    height: 50px;
+    color: white;
+    text-decoration: none;
 }
 
+.navbar > a {
+    color: white;
+    text-decoration: none;
+}
+.navbarButtons {
+    background-color: transparent;
+}
+.form-control {
+    width: 225px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center {
+    text-align: center;
+    font-family: "Cambria","Arial","SansSerif";
+}
+.btn {
+    background-color: black;
+    /*border-width: 0px;*/
+    border-color: grey;
+    color:white;
+    font-size: 20pt;
+    padding-left: 2%;
+    padding-right: 2%;
+}

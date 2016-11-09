@@ -64,4 +64,13 @@ $(document).ready(function() {
             $(".years").append(items.join("" ));
         });
     });
+    $("#race").click(function (event) {
+        $("body").append("<h2 id='result'></h2>").css("text-align", "center");
+        $("#result").empty();
+        var makeID = $('.makes').find(':selected').attr('id');
+        if(makeID == "Acura") {
+            console.log("test passed");
+        }
+        console.log("makeID: "+makeID);
+    });
 });
